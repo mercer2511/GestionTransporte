@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Transporte - Mariajose</title>
+    <link rel="stylesheet" href="../css/registro_transporte.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-left">
+            <button id="btnInicio" class="icon-btn" title="Volver a inicio" style="background:none;border:none;cursor:pointer;margin-right:12px;">
+                <svg width="24" height="24" fill="#fff" viewBox="0 0 24 24">
+                    <path d="M10 19v-6h4v6h5v-8h3L12 3 2 11h3v8z"/>
+                </svg>
+            </button>
+            <span class="navbar-title">Bienvenido, <span id="nombreUsuario">Usuario</span></span>
+        </div>
+        <div class="navbar-right">
+            <div class="dropdown">
+                <button class="dropbtn">Menú ▼</button>
+                <div class="dropdown-content">
+                    <a href="#" id="cerrarSesion">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="tabla-section">
+            <h2>Registros de Transporte</h2>
+            <div class="tabla-container">
+                <table id="tablaRegistros">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Código Univ.</th>
+                            <th>Carrera</th>
+                            <th>Ruta</th>
+                            <th>Paradero</th>
+                            <th>DNI Conductor</th>
+                            <th>Sentido</th>
+                            <th>Observaciones</th>
+                            <th>Placa</th>
+                            <th>Ruta Conductor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se insertarán los registros con JS -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="paginacion">
+                <button id="btnAnterior">Anterior</button>
+                <span id="paginaActual">1</span>
+                <button id="btnSiguiente">Siguiente</button>
+            </div>
+        </section>
+    </main>
+    <script src="../js/registro_transporte.js"></script>
+</body>
+</html>
