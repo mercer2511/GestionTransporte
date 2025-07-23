@@ -73,7 +73,7 @@ body {
 }
 
 .tabla-section {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 48px auto;
     background: #fff;
     border-radius: 10px;
@@ -92,7 +92,7 @@ body {
     overflow-x: auto;
 }
 
-#tablaRegistros {
+#tablaParaderos {
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
@@ -101,24 +101,24 @@ body {
     overflow: hidden;
 }
 
-#tablaRegistros th, #tablaRegistros td {
+#tablaParaderos th, #tablaParaderos td {
     padding: 10px 8px;
     border-bottom: 1px solid #bbdefb;
     text-align: left;
     font-size: 15px;
 }
 
-#tablaRegistros th {
+#tablaParaderos th {
     background: #1976d2;
     color: #fff;
     font-weight: 600;
 }
 
-#tablaRegistros tr:last-child td {
+#tablaParaderos tr:last-child td {
     border-bottom: none;
 }
 
-#tablaRegistros tr:hover td {
+#tablaParaderos tr:hover td {
     background: #bbdefb;
 }
 
