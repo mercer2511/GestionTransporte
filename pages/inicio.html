@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="../css/inicio.css">
 </head>
+
 <body>
     <header class="navbar">
         <div class="navbar-left">
@@ -28,18 +30,22 @@
                 <li id="btnParaderos" style="cursor:pointer;">Paraderos</li>
                 <li>Rutas</li>
                 <li>Carreras</li>
-                <li>Conductores</li>
+                <li id="btnConductores" style="cursor:pointer;">Conductores</li>
             </ul>
         </section>
     </main>
     <script src="../js/inicio.js"></script>
     <script>
-        document.getElementById('btnRegistroTransporte').onclick = function() {
+        document.getElementById('btnRegistroTransporte').onclick = function () {
             window.location.href = "registro_transporte.html";
         };
-        document.getElementById('btnParaderos').onclick = function() {
+        document.getElementById('btnParaderos').onclick = function () {
             window.location.href = "paradero.html";
+        };
+        document.getElementById('btnConductores').onclick = function () {
+            window.location.href = "conductores.html";
         };
     </script>
 </body>
+
 </html>
