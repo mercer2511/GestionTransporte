@@ -27,7 +27,15 @@
     </header>
     <main>
         <section class="tabla-section">
-            <h2>Carreras</h2>
+            <div class="section-header">
+                <h2>Carreras</h2>
+                <button id="btnAgregarCarrera" class="btn-agregar">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                    Agregar Carrera
+                </button>
+            </div>
             <div class="tabla-container">
                 <table id="tablaCarreras">
                     <thead>
@@ -35,6 +43,8 @@
                             <th>Código Carrera</th>
                             <th>Nombre Carrera</th>
                             <th>Activa</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -50,4 +60,7 @@
         </section>
     </main>
     <script src="../js/carreras.js"></script>
+    <script src="../js/modales/modal_editar.js"></script>
+    <script src="../js/modales/modal_agregar_carrera.js"></script>
 </body>
+</html>
