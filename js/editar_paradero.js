@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     // Autocompletado de paraderos
                     let paraderos = [];
-                    fetch('https://g1314108f626eb5-undc.adb.sa-saopaulo-1.oraclecloudapps.com/ords/servicio_transporte/tablas/paradero/')
+                    fetch('https://g1314108f626eb5-undc.adb.sa-saopaulo-1.oraclecloudapps.com/ords/servicio_transporte/tablas/paradero/?limit=1000')
                         .then(res => res.json())
                         .then(data => {
                             paraderos = data.items;
