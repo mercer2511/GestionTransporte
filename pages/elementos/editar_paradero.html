@@ -1,0 +1,30 @@
+<div class="modal-content">
+    <span class="close-modal" id="cerrar-modal-editar">&times;</span>
+    <h2>Editar Paradero</h2>
+    <form id="form-editar-paradero">
+        <label>Código Paradero:
+            <input type="text" id="paradero_search" placeholder="Buscar paradero por código o nombre"
+                autocomplete="off" required maxlength="10">
+            <ul id="paradero_suggestions" class="autocomplete-list"></ul>
+        </label><br>
+        <label>Código Ruta:
+            <select name="codigo_ruta" id="codigo_ruta_editar" required>
+                <option value="">Seleccione una ruta</option>
+                <!-- Opciones se llenarán dinámicamente con JS -->
+            </select>
+        </label><br>
+        <label>Nombre Paradero:
+            <input type="text" name="nombre_paradero" required maxlength="50">
+        </label><br>
+        <label>Orden:
+            <input type="number" name="orden_paradero" required min="1">
+        </label><br>
+        <label>Activo:
+            <select name="activo" required>
+                <option value="S">Sí</option>
+                <option value="N">No</option>
+            </select>
+        </label><br>
+        <button type="submit" class="btn">Guardar Cambios</button>
+    </form>
+</div>

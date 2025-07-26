@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paraderos</title>
     <link rel="stylesheet" href="../css/paraderos.css">
+    <link rel="stylesheet" href="../css/modal_paradero.css">
 </head>
+
 <body>
     <header class="navbar">
         <div class="navbar-left">
-            <button id="btnInicio" class="icon-btn" title="Volver a inicio" style="background:none;border:none;cursor:pointer;margin-right:12px;">
+            <button id="btnInicio" class="icon-btn" title="Volver a inicio"
+                style="background:none;border:none;cursor:pointer;margin-right:12px;">
                 <svg width="24" height="24" fill="#fff" viewBox="0 0 24 24">
-                    <path d="M10 19v-6h4v6h5v-8h3L12 3 2 11h3v8z"/>
+                    <path d="M10 19v-6h4v6h5v-8h3L12 3 2 11h3v8z" />
                 </svg>
             </button>
             <span class="navbar-title">Bienvenido, <span id="nombreUsuario">Usuario</span></span>
@@ -28,6 +32,8 @@
     <main>
         <section class="tabla-section">
             <h2>Paraderos</h2>
+            <button id="btn-agregar-paradero" class="btn" style="margin-bottom: 20px;">Agregar Paradero</button>
+            <button id="btn-editar-paradero" class="btn" style="margin-bottom: 20px;">Editar Paraderos</button>
             <div class="tabla-container">
                 <table id="tablaParaderos">
                     <thead>
@@ -49,8 +55,13 @@
                 <span id="paginaActual">1</span>
                 <button id="btnSiguiente">Siguiente</button>
             </div>
+            <div id="modal-agregar-paradero" class="modal" style="display:none;"></div>
+            <div id="modal-editar-paradero" class="modal" style="display:none;"></div>
         </section>
     </main>
     <script src="../js/paraderos.js"></script>
+    <script src="../js/agregar_paradero.js"></script>
+    <script src="../js/editar_paradero.js"></script>
 </body>
+
 </html>
