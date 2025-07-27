@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conductores</title>
     <link rel="stylesheet" href="../css/conductores.css">
+    <link rel="stylesheet" href="../css/modal_conductor.css">
 </head>
 <body>
     <header class="navbar">
@@ -28,6 +29,8 @@
     <main>
         <section class="tabla-section">
             <h2>Conductores</h2>
+            <button id="btn-agregar-conductor" class="btn" style="margin-bottom: 20px;">Agregar Conductor</button>
+            <button id="btn-editar-conductor" class="btn" style="margin-bottom: 20px;">Editar Conductores</button>
             <div class="tabla-container">
                 <table id="tablaConductores">
                     <thead>
@@ -49,8 +52,12 @@
                 <span id="paginaActual">1</span>
                 <button id="btnSiguiente">Siguiente</button>
             </div>
+            <div id="modal-agregar-conductor" class="modal" style="display:none;"></div>
+            <div id="modal-editar-conductor" class="modal" style="display:none;"></div>
         </section>
     </main>
     <script src="../js/conductores.js"></script>
+    <script src="../js/agregar_conductor.js"></script>
+    <script src="../js/editar_conductor.js"></script>
 </body>
 </html>

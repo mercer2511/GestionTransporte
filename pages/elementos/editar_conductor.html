@@ -1,0 +1,26 @@
+<div class="modal-content">
+    <span class="close-modal" id="cerrar-modal-editar">&times;</span>
+    <h2>Editar Conductor</h2>
+    <form id="form-editar-conductor">
+        <label>DNI:
+            <input type="text" id="conductor_search" placeholder="Buscar conductor por DNI o nombre" autocomplete="off" maxlength="50">
+            <ul id="conductor_suggestions" class="autocomplete-list"></ul>
+        </label><br>
+        <label>Nombres:
+            <input type="text" name="nombres" maxlength="50" required>
+        </label><br>
+        <label>Apellidos:
+            <input type="text" name="apellidos" maxlength="50" required>
+        </label><br>
+        <label>Fecha de Registro:
+            <input type="date" name="fecha_registro">
+        </label><br>
+        <label>Activo:
+            <select name="activo" required>
+                <option value="S">Sí</option>
+                <option value="N">No</option>
+            </select>
+        </label><br>
+        <button type="submit" class="btn">Guardar Cambios</button>
+    </form>
+</div>
